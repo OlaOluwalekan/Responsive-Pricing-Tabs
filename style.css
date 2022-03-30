@@ -10,6 +10,8 @@
   --basicColor: #F0E248;
   --premiumColor: #5459F4;
   --ultimateColor: #59E80E;
+  --pageBgColor: #8C95FE;
+  --darkPremiumColor: #1E203A;
 }
 
 .container {
@@ -18,8 +20,8 @@
   width: 100vw;
   justify-content: center;
   align-items: center;
-  background: #8C95FE;
   padding: 10px 0;
+  background: var(--pageBgColor);
 }
 
 .package {
@@ -120,6 +122,73 @@
 
 .basic .line-break {
   background: var(--basicColor);
+}
+
+.basic {
+  z-index: 20;
+}
+
+.premium {
+  position: relative;
+}
+
+.re-ban {
+  background: var(--premiumColor);
+  color: white;
+  width: 130px;
+  height: 40px;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 9px;
+  left: -36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.re-ban h3 {
+  font-size: 10px;
+}
+
+.crop-top {
+  width: 120px;
+  height: 60px;
+  background: var(--pageBgColor);
+  position: absolute;
+  top: -63px;
+  left: 0;
+  z-index: 15
+}
+
+.crop-left {
+  width: 60px;
+  height: 120px;
+  background: var(--pageBgColor);
+  position: absolute;
+  top: 0;
+  left: -62px;
+  z-index: 15;
+}
+
+.bent-in-top {
+  width: 30px;
+  height: 30px;
+  background: var(--darkPremiumColor);
+  position: absolute;
+  top: 359px;
+  left: 131px;
+  z-index: 0;
+}
+
+.bent-in-left {
+  width: 30px;
+  height: 30px;
+  background: var(--darkPremiumColor);
+  position: absolute;
+  top: 421px;
+  left: 64px;
+  z-index: 0;
 }
 
 .premium .line-break {
